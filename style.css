@@ -1,0 +1,54 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.title::after{
+    content: "";
+    width: 400px;
+    height: 400px;
+    background-color: lightblue ;
+    position: absolute;
+    top: -50%;
+    z-index: -2;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+}
+
+.title::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color:dodgerblue;
+    position: absolute;
+    bottom: -50%;
+    right: 30%;
+    z-index: -1;
+    border-radius: 68% 32% 48% 52% / 78% 63% 37% 22%;
+}
+
+.viewport{
+    width: 85%;
+    height: 230px;
+    margin:20px 0 50px 0;
+    overflow: hidden;
+}
+
+.container-slider{
+    position: relative;
+    width: 2100px;
+    max-height: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    animation: swipe 20s alternate infinite;
+}
+
+.team-member{
+    max-width: 200px;
+}
+
+    @keyframes swipe {
+        0%{left: 0;}
+        50%{left: 0;}
+
+        50%{left: -110%;}
+        100%{left: -110%;}
+    }
