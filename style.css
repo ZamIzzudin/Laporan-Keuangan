@@ -38,7 +38,7 @@ html {
     max-height: 200px;
     padding-left: 50px;
     padding-right: 50px;
-    animation: swipe 20s alternate infinite;
+    animation: swipe 25s alternate infinite;
 }
 
 .team-member{
@@ -47,8 +47,20 @@ html {
 
     @keyframes swipe {
         0%{left: 0;}
-        50%{left: 0;}
+        15%{left: 0;}
 
-        50%{left: -110%;}
-        100%{left: -110%;}
+        15%{left: -50%;}
+        30%{left: -50%;}
+
+        30%{left: -110%;}
+        45%{left: -110%;}
+
+        45%{left: -110%;}
+        60%{left: -110%;}
+
+        60%{left: -50%;}
+        85%{left: -50%;}
+
+        85%{left: 0%;}
+        100%{left: -0%;}
     }
