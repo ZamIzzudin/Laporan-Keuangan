@@ -4,22 +4,22 @@ html {
 
 .title::after{
     content: "";
-    width: 400px;
-    height: 400px;
+    width: 70%;
+    height: 150%;
     background-color: lightblue ;
     position: absolute;
-    top: -50%;
+    top: -30%;
     z-index: -2;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
 .title::before{
     content: "";
-    width: 200px;
-    height: 200px;
+    width: 30%;
+    height: 55%;
     background-color:dodgerblue;
     position: absolute;
-    bottom: -50%;
+    bottom: -10%;
     right: 30%;
     z-index: -1;
     border-radius: 68% 32% 48% 52% / 78% 63% 37% 22%;
@@ -45,6 +45,11 @@ html {
     max-width: 200px;
 }
 
+.card{
+    box-shadow: 2px 22px 30px -10px rgba(56, 38, 38, 0.20);
+}
+
+
     @keyframes swipe {
         0%{left: 0;}
         15%{left: 0;}
@@ -64,3 +69,19 @@ html {
         85%{left: 0%;}
         100%{left: -0%;}
     }
+
+@media only screen and (max-width: 600px) {
+  .title::before{
+      height: 50%;
+      width: 40%;
+      top: -55%;
+      right: 10%;
+  }
+
+  .title::after{
+      height: 110%;
+      width: 85%;
+      top: -115%;
+      right: 5%;
+  }
+}
