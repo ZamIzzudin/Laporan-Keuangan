@@ -49,7 +49,7 @@ html {
     box-shadow: 2px 22px 30px -10px rgba(56, 38, 38, 0.20);
 }
 
-.modul {
+.modul, .modul_matahari {
     border-radius:15px;
     border: 3px solid lightgray;
     transition: .3s;
@@ -57,6 +57,10 @@ html {
 
 .modul:hover {
     transform: translate(-10px,-10px);
+}
+
+.modul_matahari:hover {
+    transform: translate(10px,-10px);
 }
 
     @keyframes swipe {
